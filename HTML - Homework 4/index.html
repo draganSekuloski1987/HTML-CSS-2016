@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Working with forms</title>
+	<meta charset="utf-8" />
+    <style>
+        body{
+            color:#1d2129;
+            background-color:#e9ebee;
+            font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif !important;
+        }
+
+
+        tr, tr td {
+            padding:2px;
+            padding-right:4px;
+            padding-left:4px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            HOMEWORK #4 - Dragan Sekuloski
+        </h1>
+    </header>
+    <main>
+        <h2>
+            Working with forms
+        </h2>
+        <p>
+            <b>Description:</b> Recreate Facebook's SignUp page using only HTML! Don't worry about styling yet!
+        </p>
+        <section>
+            <h3>
+                Log in form
+            </h3>
+            <form method="post" title="Log in" id="logIn" action="index.html">
+                <table border="0" style="background-color:cornflowerblue; color:white">
+                    <caption style="color:black">
+                        Log in Facebook form within a table
+                    </caption>
+                    <tr>
+                        <td>
+                            <label for="userName">Email or Phone</label>
+                        </td>
+                        <td>
+                            <label for="password">Password</label>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email" name="username" id="userName" maxlength="30" required />
+                        </td>
+                        <td>
+                            <input type="password" name="password" id="password" maxlength="30" required />
+                        </td>
+                        <td>
+                            <input type="submit" value="Log in" style="background-color:#4267b2; color:whitesmoke; border-color:#29487d" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <a href="https://www.facebook.com/login/identify?ctx=recover&lwv=110" target="_blank">
+                                Forgot account?
+                            </a>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                </table>
+            </form>
+        </section>
+        <section>
+            <header>
+                <h3>
+                    Create a New Account
+                </h3>
+                <p>
+                    It’s free and always will be.
+                </p>
+            </header>
+            <form method="post" id="signUp" action="index.html">
+                <table border="0"  >
+                    <tr>
+
+                        <td colspan="2">
+                            <input type="text" name="firstName" title="What's your name?" placeholder="First name" maxlength="30" style="width: 100%" required />
+                        </td>
+
+                        <td colspan="2">
+                            <input type="text" name="lastName" title="What's your name?" placeholder="Last name" maxlength="30" style="width: 100%" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <input type="email" name="email"  title="You'll use this when you log in and if you ever need to reset your password." placeholder="Mobile number or email" maxlength="50" style="width: 100%" required  />
+                        </td>
+    
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <input type="email" name="reEntereEmail" title="Please re-enter your mobile number or email address." placeholder="Re-enter mobile number or email" maxlength="50" style="width: 100%" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <input type="password" name="password" title="Enter a combination of at least 6 numbers, letters and punctuation marks (like ! or &)." placeholder="New password" maxlength="50" style="width: 100%" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <label for="birtdate"><b>Birthday</b></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="date" name="birtdate" id="birtdate" style="width: 100%" required/>
+                        </td>
+                        <td colspan="2">
+                            <p>
+                                <details style="color:#777; font-size:small">
+                                    <summary style="color:#777;">Why do I need to provide my birthday?</summary>
+                                    Providing your birthday helps make sure you get the right Facebook<br />
+                                    experience for your age. If you want to change who sees this,<br />
+                                    go to the About section of your profile. For more details, <br />
+                                    please visit our <a href="https://www.facebook.com/about/privacy">Data Policy</a>.
+
+
+                                </details>
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="gender" value="Female" id="female" required/>
+                            <label for="female">
+                                Female
+                            </label>                            
+                            
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" value="Male" id="male"/>
+                            <label for="male">
+                                Male
+                            </label>   
+                        </td>
+                        <td colspan="2">
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <p style="color:#777; font-size:small">By clicking Create Account, you agree to our <a href="https://www.facebook.com/legal/terms">Terms</a> and that you<br /> have read our <a href="https://www.facebook.com/about/privacy">Data Policy</a>, including our <a href="https://www.facebook.com/policies/cookies/">Cookie Use</a>.</p>                  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" >
+                            <input type="submit" value="Create Account" style="background-color:#79bc64; color:whitesmoke; border-color:#578843;width: 100%"/>
+                        </td>
+                        <td colspan="2">
+                            
+                        </td>
+                    </tr>
+ 
+
+                </table>
+
+            </form>
+        </section>
+        
+
+    </main>
+    <footer>
+        <p>
+            Dragan Sekuloski &copy; 2016
+        </p>
+    </footer>
+</body>
+</html>
